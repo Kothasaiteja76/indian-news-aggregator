@@ -3,9 +3,9 @@ import { NewsArticle, Category } from '../types';
 
 // REPLACE THESE WITH YOUR ACTUAL API KEYS (Get them from the links above)
 const API_KEYS = {
-  GNEWS: '', // Replace with your GNews key
-  NEWSDATA: '', // Replace with your NewsData key
-  MEDIASTACK: '' // Replace with your Mediastack key
+  GNEWS: import.meta.env.VITE_GNEWS_API_KEY, // Replace with your GNews key
+  NEWSDATA: import.meta.env.VITE_NEWSDATA_API_KEY, // Replace with your NewsData key
+  MEDIASTACK: import.meta.env.VITE_MEDIASTACK_API_KEY // Replace with your Mediastack key
 };
 
 export const fetchNews = async (category: Category = 'general'): Promise<NewsArticle[]> => {
