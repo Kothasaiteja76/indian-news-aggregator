@@ -130,7 +130,7 @@ const fetchFromMediastack = async (category: Category): Promise<NewsArticle[]> =
       science: 'science'
     };
 
-    const response = await axios.get('http://api.mediastack.com/v1/news', {
+    const response = await axios.get('https://api.mediastack.com/v1/news', {
       params: {
         categories: categoryMap[category],
         countries: 'in',

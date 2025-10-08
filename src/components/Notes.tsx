@@ -69,9 +69,11 @@ export default function Notes({ notes, onNotesChange, onClose }: NotesProps) {
                     <div className="flex-1 min-w-0">
                       {/* Note Content - Only shown once */}
                       <div className="mb-4">
-                        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">
-                          {note.headline}
-                        </h3>
+                      {note.headline && (
+  <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">
+    {note.headline}
+  </h3>
+)}
                         <p className="text-gray-700 dark:text-gray-300 whitespace-pre-wrap">
                           {note.content}
                         </p>
