@@ -39,11 +39,17 @@ Storage: Browser LocalStorage (for note management)
 # ⚙️ Installation
 1️⃣ Clone the Repository
 git clone https://github.com/your-username/indian-news-aggregator.git
+
 cd indian-news-aggregator
+
 2️⃣ Install Dependencies
+
 npm install
+
 3️⃣ Install Required Packages
+
 npm run dev
+
 4️⃣ Add Environment Variables
 
 ---
@@ -57,8 +63,11 @@ VITE_MEDIASTACK_API_KEY=your_mediastack_api_key
 ---
 
 5️⃣ Run the Development Server
-npm run dev
+
+    npm run dev
+
 6️⃣ Open in Browser
+
 http://localhost:5173
 📌 Design Decisions
 
